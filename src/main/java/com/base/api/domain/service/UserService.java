@@ -1,4 +1,4 @@
-package com.base.api.service;
+package com.base.api.domain.service;
 
 import java.util.Optional;
 

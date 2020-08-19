@@ -1,4 +1,4 @@
-package com.base.api.repository;
+package com.base.api.domain.repository;
 
 
 
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import com.base.api.domain.model.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, String>{
+public interface UserRepository extends JpaRepository<User, Long>{
 
 	User findByEmail(String email);
 	

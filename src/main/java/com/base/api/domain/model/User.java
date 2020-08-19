@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 import com.base.api.enuns.ProfileEnum;
 
@@ -13,8 +16,16 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@NotBlank
+	@Email
 	private String email;
+	
+	@NotBlank
+	@Size(min = 6)
 	private String password;
+	
+	@NotBlank
 	private ProfileEnum profile;
 	
 	public Long getId() {

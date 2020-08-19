@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.base.api.domain.model.User;
+import com.base.api.domain.service.UserService;
 import com.base.api.security.jwt.JwtUserFactory;
-import com.base.api.service.UserService;
 
 @Service
 public class JwtUserDetailsServiceImpl implements UserDetailsService{

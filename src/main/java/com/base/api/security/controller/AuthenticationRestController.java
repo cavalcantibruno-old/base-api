@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.base.api.domain.model.User;
+import com.base.api.domain.service.UserService;
 import com.base.api.security.jwt.JwtAuthenticationRequest;
 import com.base.api.security.jwt.JwtTokenUtil;
 import com.base.api.security.model.CurrentUser;
-import com.base.api.service.UserService;
 
 @RestController
 @CrossOrigin(origins = "*")
