@@ -1,4 +1,4 @@
-package com.base.api.security.jwt;
+package com.base.security.jwt;
 
 import java.io.IOException;
 import java.io.Serializable;

@@ -1,4 +1,4 @@
-package com.base.api.domain.service.impl;
+package com.base.domain.service.impl;
 
 import java.util.Optional;
 
@@ -10,9 +10,9 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 
-import com.base.api.domain.model.User;
-import com.base.api.domain.repository.UserRepository;
-import com.base.api.domain.service.UserService;
+import com.base.domain.model.User;
+import com.base.domain.repository.UserRepository;
+import com.base.domain.service.UserService;
 
 @Component
 public class UserServiceImpl implements UserService {

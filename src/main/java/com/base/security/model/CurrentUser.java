@@ -1,6 +1,6 @@
-package com.base.api.security.model;
+package com.base.security.model;
 
-import com.base.api.domain.model.User;
+import com.base.domain.model.User;
 
 public class CurrentUser {
 

@@ -1,4 +1,4 @@
-package com.base.api.enuns;
+package com.base.domain.enuns;
 
 public enum ProfileEnum {
 

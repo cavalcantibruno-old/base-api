@@ -1,4 +1,4 @@
-package com.base.api.security.jwt;
+package com.base.security.jwt;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-import com.base.api.domain.model.User;
-import com.base.api.enuns.ProfileEnum;
+import com.base.domain.enuns.ProfileEnum;
+import com.base.domain.model.User;
 
 public class JwtUserFactory {
 

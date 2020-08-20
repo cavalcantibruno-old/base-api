@@ -1,10 +1,10 @@
-package com.base.api.domain.service;
+package com.base.domain.service;
 
 import java.util.Optional;
 
 import org.springframework.data.domain.Page;
 
-import com.base.api.domain.model.User;
+import com.base.domain.model.User;
 
 public interface UserService {
 

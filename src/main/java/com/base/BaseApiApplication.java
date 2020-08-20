@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.base.api.domain.model.User;
-import com.base.api.domain.repository.UserRepository;
-import com.base.api.enuns.ProfileEnum;
+import com.base.domain.enuns.ProfileEnum;
+import com.base.domain.model.User;
+import com.base.domain.repository.UserRepository;
 
 @SpringBootApplication
 public class BaseApiApplication {

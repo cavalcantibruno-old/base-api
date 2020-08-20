@@ -1,4 +1,4 @@
-package com.base.api.domain.model;
+package com.base.domain.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-import com.base.api.enuns.ProfileEnum;
+import com.base.domain.enuns.ProfileEnum;
 
 @Entity
 public class User {

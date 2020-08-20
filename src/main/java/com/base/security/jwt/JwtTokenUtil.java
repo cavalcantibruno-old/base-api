@@ -1,4 +1,4 @@
-package com.base.api.security.jwt;
+package com.base.security.jwt;
 
 import java.io.Serializable;
 import java.util.Date;

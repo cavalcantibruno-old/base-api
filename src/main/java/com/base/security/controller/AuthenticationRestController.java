@@ -1,4 +1,4 @@
-package com.base.api.security.controller;
+package com.base.security.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.base.api.domain.model.User;
-import com.base.api.domain.service.UserService;
-import com.base.api.security.jwt.JwtAuthenticationRequest;
-import com.base.api.security.jwt.JwtTokenUtil;
-import com.base.api.security.model.CurrentUser;
+import com.base.domain.model.User;
+import com.base.domain.service.UserService;
+import com.base.security.jwt.JwtAuthenticationRequest;
+import com.base.security.jwt.JwtTokenUtil;
+import com.base.security.model.CurrentUser;
 
 @RestController
 @CrossOrigin(origins = "*")

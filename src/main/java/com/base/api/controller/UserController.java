@@ -24,9 +24,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.base.api.domain.model.User;
-import com.base.api.domain.service.UserService;
 import com.base.api.response.Response;
+import com.base.domain.model.User;
+import com.base.domain.service.UserService;
 
 @RestController
 @RequestMapping("/api/user")

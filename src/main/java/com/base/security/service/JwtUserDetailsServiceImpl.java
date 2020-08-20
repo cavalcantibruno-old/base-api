@@ -1,4 +1,4 @@
-package com.base.api.security.service;
+package com.base.security.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,9 +6,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.base.api.domain.model.User;
-import com.base.api.domain.service.UserService;
-import com.base.api.security.jwt.JwtUserFactory;
+import com.base.domain.model.User;
+import com.base.domain.service.UserService;
+import com.base.security.jwt.JwtUserFactory;
 
 @Service
 public class JwtUserDetailsServiceImpl implements UserDetailsService{

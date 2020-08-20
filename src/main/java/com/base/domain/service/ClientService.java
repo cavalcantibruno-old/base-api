@@ -1,6 +1,6 @@
-package com.base.api.domain.service;
+package com.base.domain.service;
 
-import com.base.api.domain.model.Client;
+import com.base.domain.model.Client;
 
 public interface ClientService {
 
