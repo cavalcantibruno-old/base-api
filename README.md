@@ -13,6 +13,7 @@ Java 11 ♨️
 * Spring Data JPA 🍃
 * Spring Security 🍃
 * Rest Repositories 📂
+* Modelmapper 📂
 * JWT 🔏
 * MySQL Driver 🎲
 * Flyway Migration 🎲

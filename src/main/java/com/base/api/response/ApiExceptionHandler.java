@@ -23,6 +23,18 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 	@Autowired
 	private MessageSource messageSource;
 	
+	@ExceptionHandler(EntityNotFoundException.class)
+	public ResponseEntity<Object> handleEntityNotFoundException(DomainException ex, WebRequest request) {
+		var status = HttpStatus.NOT_FOUND;
+		
+		var problem = new Problem();
+		problem.setStatus(status.value());
+		problem.setTitle(ex.getMessage());
+		problem.setDateHour(LocalDateTime.now());
+		
+		return handleExceptionInternal(ex, problem, new HttpHeaders(), status, request);
+	}
+	
 	@ExceptionHandler(DomainException.class)
 	public ResponseEntity<Object> handleDomain(DomainException ex, WebRequest request) {
 		var status = HttpStatus.BAD_REQUEST;
@@ -53,7 +65,17 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 		problem.setTitle("One or more fields are invalid");
 		problem.setDateHour(LocalDateTime.now());
 		problem.setCamps(camps);
-		
+				
 		return super.handleExceptionInternal(ex, problem, headers, status, request);
 	}
+	
+	/*
+	public Problem instanceProblem() {
+		Problem problem = new Problem();
+		
+		return problem;
+		
+	}
+	*/
+
 }
